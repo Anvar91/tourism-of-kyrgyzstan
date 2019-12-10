@@ -1,0 +1,21 @@
+.main-page {
+  background-image: url("../../img/IMG_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 506px;
+}
+
+.title {
+  padding-top: 235px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: Andalus;
+
+    & p.paragraph {
+      font-family: Roboto;
+      font-size: 21px;
+      margin-top: 10px;
+    }
+}

@@ -1,0 +1,48 @@
+.tours {
+  max-width: 1040px;
+  margin: auto;
+  padding-bottom: 30px;
+
+
+    & h1 {
+      font-family: 'Baskervville', serif;
+      text-align: center;
+      border-bottom: #120f0f;
+      padding: 20px 0px 20px;
+    }
+}
+
+.container-tours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tour {
+  width: 30%;
+  height: 400px;
+  margin-top: 20px;
+  font-family: CordiaUPC sans-serif;
+
+  .tour-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .description {
+    max-height: 99px;
+    overflow: hidden;
+    padding: 10px 0 20px;
+  }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      padding-top: 10px;
+    }
+}
+

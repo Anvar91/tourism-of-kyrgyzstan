@@ -1,0 +1,53 @@
+@import '../../styles/colors';
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+
+.header {
+  background-color: skyblue;
+  width: 100%;
+  height: auto;
+}
+
+.main-nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1040px;
+  margin: 0px auto;
+  padding: 10px 0px 10px;
+}
+
+.nav-bar1, .nav-bar2 {
+  margin: auto;
+
+  a {
+    color: $white;
+    margin-top: 40px;
+    text-decoration: none;
+    font-family: 'Baskervville', serif;
+    font-size: 20px;
+    margin-left: 50px;
+
+    &:hover {
+        color: limegreen;
+        transition-duration: 0.2s;
+    }
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid $blue;
+  padding: 10px 30px 11px;
+  margin: 0 0 0 50px;
+  text-decoration: none;
+  color: $white;
+
+  :hover {
+    background-color: white;
+  }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}

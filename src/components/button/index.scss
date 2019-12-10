@@ -1,0 +1,10 @@
+.btn {
+  color: black;
+  cursor: pointer;
+  text-shadow: none;
+  border: 1px solid black;
+
+  &:disabled {
+    background-color: grey;
+  }
+}
