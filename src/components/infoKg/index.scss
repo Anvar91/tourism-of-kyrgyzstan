@@ -1,0 +1,32 @@
+.infoKg {
+  display: flex;
+  padding-bottom: 60px;
+
+  img {
+    flex: 1;
+    width: 50%;
+    height: auto;
+    order: 2;
+
+    &.left {
+      order: 1;
+    }
+
+    &.right {
+      order: 2;
+    }
+  }
+
+  .text-block {
+    flex: 1;
+    margin-left: 10px;
+    order: 1;
+
+    .description {
+      font-size: 18px;
+      text-align: justify;
+      font-family: 'Baskervville', serif;
+      width: 500px;
+    }
+  }
+}
