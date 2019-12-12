@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class Tour extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class Tour extends React.Component {
       <p className='description'><b>Описание:</b> {this.props.tour.description}</p>
       <p><b>Цена:</b> {this.props.tour.price}</p>
 
-      <button className='buttn'>Узнать подробнее {this.props.tour.id}</button>
+      <Link to={`/tours/${this.props.tour.id}`}><p className='more'>Узнать подробнее...</p></Link>
     </>
   }
 }

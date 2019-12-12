@@ -20,7 +20,6 @@
 
 .tour {
   width: 30%;
-  height: 400px;
   margin-top: 20px;
   font-family: CordiaUPC sans-serif;
 
@@ -44,5 +43,49 @@
     p {
       padding-top: 10px;
     }
+
+    a {
+      text-decoration: none;
+      color: black;
+
+
+
+      & :hover {
+        background-color: darkcyan;
+
+      }
+    }
+
+  .more {
+    border: 1px solid grey;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+
+
+  }
+}
+
+.tour1 {
+  max-width: 1040px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  font-family: CordiaUPC sans-serif;
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+};
+
+.description {
+  margin: 20px 0 20px;
+  text-align: left;
+  font-size: 18px;
 }
 

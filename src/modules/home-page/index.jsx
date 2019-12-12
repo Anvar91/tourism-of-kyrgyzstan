@@ -5,15 +5,17 @@ import Header from "../../components/header";
 import Main from "../../components/main";
 import {withRouter} from 'react-router-dom';
 import AboutKg from "../../components/aboutKg";
+import Core from "../../components/core/core";
 
 
 class Home extends React.Component{
   render() {
     return (
       <div className='home-page'>
-        <Main/>
-        <AboutKg />
+         <Main/>
+         <AboutKg />
       </div>
+
   );
   }
 }
