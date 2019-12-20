@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 import {withRouter} from 'react-router-dom';
 
 class SingleTour extends React.Component {
@@ -26,28 +27,35 @@ class SingleTour extends React.Component {
     }
 
     return (
-      <div className='tour1'>
+      <div className='single-tour'>
         <h1>{this.state.tour.name}</h1>
-        <img src={this.state.tour.image1}/>
+        <img src={this.state.tour.image}/>
 
         <div className='description'>
-          <p>{this.state.tour.description}
-            На протяжении всего пути приходится идти в гору, такое испытание под силу далеко не каждому. Среднее время похода в одну сторону — 3-4 часа.
-            У озера есть необычная вершина под названием «Сахарная голова» с нависающим ледником. Высота этой вершины составляет 4253 м. Озеро завального происхождения, не имеет прямого стока и уходит под землю, вырываясь из под земли несколькими километрами ниже. Большую часть года озеро находится в замерзшем состоянии, а летом вода не прогревается больше чем 5 градусов по Цельсию, потому для купания оно малопригодно. Кель-Тор примечателен потрясающим бирюзовым цветом озера, особенно красивое сочетание красок можно застать там именно летом.
-          </p>
+          <p>{this.state.tour.description}</p>
         </div>
 
-          <img src='../../../public/assets/koltor3.jpg'/>
+          <img src={this.state.tour.additionalImages[0]}/>
         <div className='description'>
-          <p>
-            Длина пешеходного трека к озеру составляет 8 километров в одну сторону.
-            Тропа видна четко, потому заблудиться будет довольно проблематично.
-            Сама дорога крайне живописна: начинается она с довольно пологого и безлесого участка, постепенно уходя все выше и выше на лесистые склоны, а затем и на настоящие высокогорные альпийские луга.
-            По дороге есть небольшой брод. Есть множество мест для стоянок или пикников.
-          </p>
-          <p><b>Цена:</b> {this.state.tour.price}</p>
-          <button>Купить</button>
+          <p>{this.state.tour.longDescription}</p>
         </div>
+
+        <div className='gallery'>
+          <div className='pictures'>
+            <img src={this.state.tour.additionalImages[1]}/>
+            <img src={this.state.tour.additionalImages[2]}/>
+            <img src={this.state.tour.additionalImages[3]}/>
+            <img src={this.state.tour.additionalImages[4]}/>
+            <img src={this.state.tour.additionalImages[5]}/>
+            <img src={this.state.tour.additionalImages[6]}/>
+          </div>
+        </div>
+
+        <div className='buy'>
+          <p className='price'><b>Цена:</b> {this.state.tour.price}</p>
+          <button className='btn1'>Купить</button>
+        </div>
+
       </div>
     )
   }

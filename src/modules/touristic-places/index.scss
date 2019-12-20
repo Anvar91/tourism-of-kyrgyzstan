@@ -1,0 +1,27 @@
+.places {
+  max-width: 1040px;
+  margin: auto;
+  padding-bottom: 30px;
+
+    .img {
+      text-align: center;
+    }
+
+    .block-text {
+      margin: 10px 0 30px;
+      font-size: 18px;
+      text-align: justify;
+      font-family: 'Baskervville', serif;
+    }
+  .container-places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  & h1 {
+      font-family: 'Baskervville', serif;
+      text-align: center;
+      padding: 20px 0px 20px;
+    }
+}

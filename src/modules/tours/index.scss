@@ -3,37 +3,35 @@
   margin: auto;
   padding-bottom: 30px;
 
-
     & h1 {
       font-family: 'Baskervville', serif;
       text-align: center;
       border-bottom: #120f0f;
       padding: 20px 0px 20px;
     }
-}
 
-.container-tours {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.tour {
-  width: 30%;
-  margin-top: 20px;
-  font-family: CordiaUPC sans-serif;
-
-  .tour-title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .container-tours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .description {
-    max-height: 99px;
-    overflow: hidden;
-    padding: 10px 0 20px;
-  }
+  .tour {
+    width: 30%;
+    margin-top: 20px;
+    font-family: CordiaUPC sans-serif;
+
+    .tour-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .description {
+      max-height: 99px;
+      overflow: hidden;
+      padding: 10px 0 20px;
+    }
 
     img {
       width: 100%;
@@ -56,36 +54,69 @@
       }
     }
 
-  .more {
-    border: 1px solid grey;
-    margin-top: 10px;
-    width: 150px;
-    border-radius: 5px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    padding-bottom: 10px;
+    .more {
+      border: 1px solid grey;
+      margin-top: 10px;
+      width: 150px;
+      border-radius: 5px;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+      padding-bottom: 10px;
 
 
+    }
   }
-}
 
-.tour1 {
-  max-width: 1040px;
-  margin: auto;
-  text-align: center;
-  padding-top: 20px;
-  font-family: CordiaUPC sans-serif;
+  .tour1 {
+    max-width: 1040px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-family: CordiaUPC sans-serif;
 
     img {
       width: 300px;
       height: auto;
     }
-};
+  };
 
-.description {
-  margin: 20px 0 20px;
-  text-align: left;
-  font-size: 18px;
+  .description {
+    margin: 20px 0 20px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .price {
+    margin-top: 40px;
+    font-size: 30px;
+
+  }
+
+  .btn1 {
+    width: 125px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .buy {
+    border: 2px dashed skyblue;
+    width: 35%;
+    margin: 20px auto;
+    height: 150px;
+    font-family: Helvetica;
+  }
 }
 
+@media (max-width: 600px) {
+  .container-tours {
+    flex-direction: column;
+    margin: auto;
+  }
+}

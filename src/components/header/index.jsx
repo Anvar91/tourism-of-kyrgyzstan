@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './index.scss';
 import logo from '../../img/mountains.svg';
 import {NavLink} from "react-router-dom";
+import Tour from "../../modules/tours/Tour";
 
 class Header extends Component{
   render() {
@@ -14,13 +15,9 @@ class Header extends Component{
 
           <div className='nav-bar1'>
             <NavLink to='/touristic-places'>Туристические места</NavLink>
-            <NavLink to='/interesting' exact>Интересные статьи</NavLink>
+            <NavLink to='/articles'>Интересные статьи</NavLink>
             <NavLink to='/tours'>Туры</NavLink>
           </div>
-
-          {/*<div className='nav-bar-2'>*/}
-          {/*  <a className="btn" href="#">User profile</a>*/}
-          {/*</div>*/}
         </div>
       </div>
 

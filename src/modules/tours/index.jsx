@@ -26,8 +26,8 @@ class Tours extends React.Component {
         <h1>Туры</h1>
         <div className='container-tours'>
           {this.state.tours.map((tour) => <div className='tour'>
-            <Tour tour={tour} />
-          </div>)}
+          <Tour tour={tour} />
+        </div>)}
         </div>
       </div>
     )

@@ -4,21 +4,22 @@ import './index.scss';
 class InfoKg extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {...this.props}
+    this.state = {
+      infoKg: []
+    }
   }
 
   render() {
-    const {imagePosition, imageSource, description} = this.state;
 
     return(
     <div className='infoKg'>
-      <img
-        className={imagePosition}
-        src={imageSource}
-      />
+      <div className='image'>
+        <img src={this.state.infoKg.image}/>
+      </div>
+
 
       <div className='text-block'>
-        <div className='description'>{description}</div>
+        <div className='description'>{this.state.infoKg.description}</div>
       </div>
     </div>
     );

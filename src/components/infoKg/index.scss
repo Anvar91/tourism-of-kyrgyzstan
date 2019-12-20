@@ -26,7 +26,25 @@
       font-size: 18px;
       text-align: justify;
       font-family: 'Baskervville', serif;
-      width: 500px;
+      width: 100%;
     }
   }
+}
+
+@media (max-width: 600px) {
+  .infoKg {
+    flex-direction: column;
+
+    img {
+      margin: auto;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .description {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
 }

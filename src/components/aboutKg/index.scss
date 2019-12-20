@@ -10,4 +10,39 @@
       text-transform: uppercase;
       font-size: 50px;
     }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  .info-block {
+    display: flex;
+  }
+
+  .img-block {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .disc-block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .infoKg {
+    flex-direction: column;
+
+    img {
+      margin: auto;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .description {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
 }

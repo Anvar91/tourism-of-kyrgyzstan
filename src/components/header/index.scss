@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 
 .header {
+  display: flex;
+  flex-wrap: wrap;
   background-color: skyblue;
   width: 100%;
   height: auto;
@@ -31,6 +33,10 @@
         color: limegreen;
         transition-duration: 0.2s;
     }
+
+    :hover .active {
+      background-color: #ba1c1c;
+    }
   }
 }
 
@@ -50,4 +56,11 @@
 .logo {
   width: 100px;
   height: 100px;
+}
+
+@media (max-width: 600px) {
+  .main-nav-bar {
+    flex-direction: column;
+    margin: auto;
+  }
 }

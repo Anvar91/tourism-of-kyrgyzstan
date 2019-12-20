@@ -6,12 +6,13 @@ import {
   Switch,
 } from "react-router-dom";
 import Home from "./modules/home-page";
-import Interesting from "./modules/interesting";
 import Tours from "./modules/tours";
+import Articles from "./modules/articles";
 import Tour from "./modules/tours/Tour";
 import SingleTour from "./modules/single-tour";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import TouristicPlaces from "./modules/touristic-places";
 
 class App extends React.Component {
 
@@ -20,13 +21,13 @@ class App extends React.Component {
       <div>
         <Header/>
            <Route path='/' exact={true} component={Home} />
-           <Route path='/interesting' component={Interesting} />
+           <Route path='/articles' component={Articles} />
+           <Route path='/touristic-places' component={TouristicPlaces}/>
+           {/*<Route path='/touristic-places/:placeId' component={SinglePlace}/>*/}
            <Route path='/tours' component={Tours} exact={true}/>
            <Route path='/tours/:tourId' component={SingleTour} exact={true}/>
         <Footer/>
       </div>
-
-
     )
   }
 }
