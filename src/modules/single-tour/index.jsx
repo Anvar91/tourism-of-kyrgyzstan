@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom';
 class SingleTour extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
 
     this.state = {
       tour: null
@@ -19,6 +20,10 @@ class SingleTour extends React.Component {
     this.setState({
       tour
     })
+  }
+
+  handleClick() {
+    alert("Спасибо за покупку!");
   }
 
   render() {
@@ -53,7 +58,7 @@ class SingleTour extends React.Component {
 
         <div className='buy'>
           <p className='price'><b>Цена:</b> {this.state.tour.price}</p>
-          <button className='btn1'>Купить</button>
+          <button className='btn1' onClick={this.handleClick}>Купить</button>
         </div>
 
       </div>

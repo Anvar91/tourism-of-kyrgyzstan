@@ -7,10 +7,10 @@ class Place extends Component {
     return(
       <>
         <img src={this.props.place.image} />
-        <h2 className='place-title'title={this.props.place.name}>{this.props.place.name}</h2>
+        <h2 className='place-title' title={this.props.place.name}>{this.props.place.name}</h2>
         <p className='place-description'><b>Описание:</b> {this.props.place.description}</p>
 
-        <Link to={`/touristic-places/${this.props.place.id}`}><p className='more'>Узнать подробнее...</p></Link>
+        <Link to={`/places/${this.props.place.id}`}><p className='more'>Узнать подробнее...</p></Link>
       </>
     );
   }

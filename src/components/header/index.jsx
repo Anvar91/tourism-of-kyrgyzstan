@@ -14,7 +14,7 @@ class Header extends Component{
           </div>
 
           <div className='nav-bar1'>
-            <NavLink to='/touristic-places'>Туристические места</NavLink>
+            <NavLink to='/places'>Туристические места</NavLink>
             <NavLink to='/articles'>Интересные статьи</NavLink>
             <NavLink to='/tours'>Туры</NavLink>
           </div>

@@ -13,6 +13,7 @@ import SingleTour from "./modules/single-tour";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import TouristicPlaces from "./modules/touristic-places";
+import SinglePlace from "./components/single-place";
 
 class App extends React.Component {
 
@@ -22,8 +23,8 @@ class App extends React.Component {
         <Header/>
            <Route path='/' exact={true} component={Home} />
            <Route path='/articles' component={Articles} />
-           <Route path='/touristic-places' component={TouristicPlaces}/>
-           {/*<Route path='/touristic-places/:placeId' component={SinglePlace}/>*/}
+           <Route path='/places' component={TouristicPlaces} exact={true}/>
+           <Route path='/places/:placeId' component={SinglePlace} exact={true}/>
            <Route path='/tours' component={Tours} exact={true}/>
            <Route path='/tours/:tourId' component={SingleTour} exact={true}/>
         <Footer/>
