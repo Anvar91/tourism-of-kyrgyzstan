@@ -14,9 +14,15 @@ class Header extends Component{
           </div>
 
           <div className='nav-bar1'>
-            <NavLink to='/places'>Туристические места</NavLink>
-            <NavLink to='/articles'>Интересные статьи</NavLink>
-            <NavLink to='/tours'>Туры</NavLink>
+            <span>
+              <NavLink to='/places'>Туристические места</NavLink>
+            </span>
+            <span>
+              <NavLink to='/articles'>Интересные статьи</NavLink>
+            </span>
+            <span>
+              <NavLink to='/tours'>Туры</NavLink>
+            </span>
           </div>
         </div>
       </div>

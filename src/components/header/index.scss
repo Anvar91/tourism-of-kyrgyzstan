@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   background-color: skyblue;
   width: 100%;
-  height: auto;
 }
 
 .main-nav-bar {
@@ -23,11 +22,10 @@
 
   a {
     color: $white;
-    margin-top: 40px;
     text-decoration: none;
     font-family: 'Baskervville', serif;
     font-size: 20px;
-    margin-left: 50px;
+    padding: 20px;
 
     &:hover {
         color: limegreen;
@@ -62,5 +60,10 @@
   .main-nav-bar {
     flex-direction: column;
     margin: auto;
+  }
+
+  .nav-bar1 {
+    font-size: 14px;
+    text-align: center;
   }
 }

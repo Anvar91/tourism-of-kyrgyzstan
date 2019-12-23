@@ -1,43 +1,82 @@
 @import "../../styles/colors";
 
 .footer {
-  background-color: skyblue;
-  position: relative;
   width: 100%;
+  padding: 40px 20%;
+  background-color: dodgerblue;
+  align-items: center;
 }
 
-.footer-nav-bar {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1040px;
-  height: 200px;
-  margin: auto;
-  border-bottom: 1px solid $white;
-}
-
-.our-contacts {
-  width: 260px;
-  padding-top: 20px;
-  font-size: 17px;
-  font-family: 'Baskervville', serif;
-
-  & p {
-    color: white;
-    padding-top: 10px;
-    text-decoration: none;
-  }
-}
-
-.all-right-reserved {
+.footer-important-tittle {
   text-align: center;
-  padding: 20px 0 20px;
-  font-size: 17px;
-  color: $white;
-  font-family: 'Baskervville', serif;
+  margin-bottom: 30px;
 }
 
-.social-media {
-  padding-top: 20px;
+.footer-important-tittle-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #ECEFF1;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.footer-item {
+  /* width: calc(100%/3); */
+  padding: 1px;
+}
+
+.footer-tittle {
+  width: 100%;
+  color: rgba(255,255,255,.8);
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  font-family: 'Baskervville', serif;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-image {
+  display: flex;
+  padding: 5;
+}
+
+.footer-mini-image {
+  margin-right: 10px;
+}
+
+.footer-text {
+  text-decoration: none!important;
+  color: rgba(255,255,255,.4);
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-end {
+  padding-top: 40px;
+  width: 100%;
+  color: rgba(255,255,255,.8);
+  text-align: center;
+}
+
+.footer-tittle-end {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.instagram:hover {
+  cursor: pointer;
 }

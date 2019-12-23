@@ -1,12 +1,15 @@
 .main-page {
+  display: flex;
   background-image: url("../../img/IMG_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 506px;
+  height: 100vh;
+  background-position: left, right;
+  background-attachment: fixed, fixed;
 }
 
 .title {
-  padding-top: 235px;
+  margin: auto;
   text-align: center;
   color: #ffffff;
   font-size: 25px;
@@ -18,4 +21,10 @@
       font-size: 21px;
       margin-top: 10px;
     }
+}
+
+@media (max-width: 600px){
+  .title {
+    font-size: 20px;
+  }
 }

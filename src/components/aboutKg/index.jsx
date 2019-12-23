@@ -1,24 +1,20 @@
 import React from 'react';
 import './index.scss';
+import {KYRGYZSTAN} from "../../data";
 import InfoKg from "../infoKg";
-import Tour from "../../modules/tours/Tour";
 
 class AboutKg extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state= {
-      infoKg: []
-    }
-  }
-
   render() {
     return(
       <div className='about-kg'>
         <h1>О Кыргызстане</h1>
 
         <div className='info-block'>
-
+            {KYRGYZSTAN.map((infoKg) => {
+              return (
+                <InfoKg infoKg={infoKg}/>
+              )
+            })}
         </div>
 
       </div>

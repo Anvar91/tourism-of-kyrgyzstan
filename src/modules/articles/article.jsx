@@ -4,7 +4,7 @@ import './article.scss';
 class Article extends React.Component {
 
   render() {
-    const {id, image, name, description, subName} = this.props.article;
+    const {image, name, description, subName} = this.props.article;
 
     return(
       <div className='article'>
